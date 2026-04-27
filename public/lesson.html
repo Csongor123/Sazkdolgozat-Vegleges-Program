@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="hu"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Lecke</title> 
+        <link rel="stylesheet" href="css/style.css">
+    </head> 
+    <body>
+
+    <div class="container" id="detailView">
+
+      <button class="back-btn" onclick="history.back()">←Vissza</button> 
+      <div id="lessonContent"></div> 
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="data/taskSolutions.js"></script>
+    <script src="data/lessonData.js"></script> 
+    <script src="js/lesson/LessonAttemptManager.js"></script>
+    <script src="js/lesson/LessonOutputRenderer.js"></script>
+    <script src="js/lesson/LessonTaskValidators.js"></script>
+    <script src="js/lessonView.js"></script>
+
+</body> 
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "tanulasi-eloerehaladas",
+  "version": "1.0.0",
+  "main": "server.js",
+  "bin": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "build": "pkg . --output TanulasElorehaladasApp.exe"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sql.js": "^1.10.3"
+  },
+  "pkg": {
+    "assets": [
+      "public/**/*",
+      "node_modules/sql.js/dist/sql-wasm.wasm"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
+  }
+}
